@@ -1,0 +1,17 @@
+backend
+|   .env
+|   .gitignore
+|   output.txt
+|   package-lock.json
+|   package.json
+|   
+\---src
+    |   server.js
+    |   
+    +---config
+    |       database.js
+    |       
+    +---controllers
+    +---middleware
+    +---models
+    \---routes

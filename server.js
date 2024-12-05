@@ -4,7 +4,7 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const morgan = require('morgan');
 require('dotenv').config();
-const connectDB = require('./config/database');
+const connectDB = require('./src/config/database');
 
 // Initialize express app
 const app = express();
@@ -31,7 +31,7 @@ app.get('/ping', (req, res) => {
 });
 
 // Routes
-const movementRoutes = require('./routes/movementRoutes');
+const movementRoutes = require('./src/routes/movementRoutes');
 app.use('/api', movementRoutes);
 
 // Error handling middleware
